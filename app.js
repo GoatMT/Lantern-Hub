@@ -5,6 +5,27 @@ const navLinks = [...document.querySelectorAll('.main-nav a[href^="#"]')];
 const navTargets = navLinks
   .map((link) => document.querySelector(link.hash))
   .filter(Boolean);
+const revealTargets = [...document.querySelectorAll("[data-reveal]")];
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReducedMotion && "IntersectionObserver" in window && revealTargets.length) {
+  revealTargets.forEach((target, index) => {
+    target.style.setProperty("--reveal-delay", `${(index % 3) * 90}ms`);
+  });
+  document.documentElement.classList.add("has-motion");
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+
+  revealTargets.forEach((target) => revealObserver.observe(target));
+} else {
+  revealTargets.forEach((target) => target.classList.add("is-visible"));
+}
 
 if ("IntersectionObserver" in window && navTargets.length) {
   const sectionObserver = new IntersectionObserver((entries) => {

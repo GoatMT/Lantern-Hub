@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#061b13">
-    <meta name="description" content="Explore Lantern Soccer League, Lantern Rush, Flemingdon Royale, and Lantern of Knowledge Academy from one community hub.">
-    <title>Lantern Hub | Games, league & community</title>
+    <meta name="description" content="Start with the Lantern Soccer League main site, explore Lantern Rush, and discover the Lantern community.">
+    <title>Lantern Hub | Start with the league</title>
     <link rel="icon" href="assets/lantern-soccer-league-logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
@@ -19,12 +19,12 @@
         <span class="brand-name">LANTERN <b>HUB</b></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#worlds">Explore</a>
-        <a href="#league">The league</a>
+        <a href="#league" aria-current="location">Main site</a>
+        <a href="#games">Games</a>
         <a href="#academy">The academy</a>
       </nav>
-      <a class="header-link" href="https://www.instagram.com/lanternsoccerleague/" target="_blank" rel="noopener noreferrer">
-        <span>Follow along</span><span aria-hidden="true">↗</span>
+      <a class="header-link" href="https://goatmt.github.io/LSL/" target="_blank" rel="noopener noreferrer">
+        <span>Open main site</span><span aria-hidden="true">↗</span>
       </a>
     </header>
 
@@ -32,12 +32,12 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow"><span class="live-dot"></span> THE LANTERN COMMUNITY, CONNECTED</p>
-          <h1 id="hero-title">One home.<br>Many <span>worlds.</span></h1>
-          <p class="hero-text">Step into the games, follow the league, and meet the community behind it all.</p>
+          <p class="eyebrow"><span class="live-dot"></span> WELCOME TO LANTERN HUB</p>
+          <h1 id="hero-title">Start with<br>the <span>league.</span></h1>
+          <p class="hero-text">Your home for Lantern Soccer League, games, and the community behind them.</p>
           <div class="hero-actions">
-            <a class="button button-gold" href="#worlds">Explore the hub <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#academy">Discover the academy <span aria-hidden="true">↗</span></a>
+            <a class="button button-gold" href="https://goatmt.github.io/LSL/" target="_blank" rel="noopener noreferrer">Open the LSL main site <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#games">See the games <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-note"><span class="note-line"></span><span>Made for our community</span></div>
         </div>
@@ -50,54 +50,64 @@
           </div>
           <div class="orbit-label"><span class="orbit-label-dot"></span> FLEMINGDON · TORONTO</div>
         </div>
-        <a class="scroll-cue" href="#worlds" aria-label="Scroll to explore"><span class="scroll-wheel"></span><span>SCROLL TO EXPLORE</span></a>
+        <a class="scroll-cue" href="#league" aria-label="Scroll to the main site"><span class="scroll-wheel"></span><span>SCROLL TO EXPLORE</span></a>
       </section>
 
-      <section class="worlds section-wrap" id="worlds" aria-labelledby="worlds-title">
+      <section class="main-site section-wrap" id="league" aria-labelledby="league-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow section-kicker">01 / CHOOSE YOUR DESTINATION</p>
-            <h2 id="worlds-title">Find your <span>next world.</span></h2>
+          <div data-reveal>
+            <p class="eyebrow section-kicker">01 / START HERE</p>
+            <h2 id="league-title">The Lantern Soccer<br><span>League main site.</span></h2>
           </div>
-          <p class="section-intro">Three ways into the Lantern universe. Pick a world and jump right in.</p>
+          <p class="section-intro" data-reveal>Follow real LSL games, stats, teams, and more. Start here, then explore the games below.</p>
+        </div>
+
+        <article class="main-site-panel" data-reveal>
+          <div class="main-site-logo"><img src="assets/lantern-soccer-league-logo.png" alt="Lantern Soccer League emblem"></div>
+          <div class="main-site-copy">
+            <p class="card-overline">THE OFFICIAL LSL HOME</p>
+            <h3>Real games.<br>Real stats. All LSL.</h3>
+            <p>Catch up on the league, players, teams, standings, and more.</p>
+            <div class="main-site-actions">
+              <a class="button button-gold" href="https://goatmt.github.io/LSL/" target="_blank" rel="noopener noreferrer">Visit the main site <span aria-hidden="true">↗</span></a>
+              <a class="button button-soft" href="https://www.instagram.com/lanternsoccerleague/" target="_blank" rel="noopener noreferrer">Follow on Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <span class="main-site-glow" aria-hidden="true"></span>
+          <span class="panel-index" aria-hidden="true">LSL / 01</span>
+        </article>
+      </section>
+
+      <section class="games section-wrap" id="games" aria-labelledby="games-title">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow section-kicker">02 / GAMES &amp; EXPERIENCES</p>
+            <h2 id="games-title">Next up: <span>game time.</span></h2>
+          </div>
+          <p class="section-intro">Jump into a 3D LSL match, or keep an eye out for the next community game.</p>
         </div>
 
         <div class="world-cards">
-          <article class="world-card royale-card">
-            <div class="card-topline"><span>GAME WORLD</span><span class="card-number">01</span></div>
-            <div class="card-art royale-art"><img src="assets/flemingdon-royale-logo.png" alt="LSL Flemingdon Royale"></div>
-            <div class="card-content">
-              <p class="card-overline">FLEMINGDON · BATTLE ROYALE</p>
-              <h3>Flemingdon<br>Royale</h3>
-              <p>Drop in, rise up, and claim your place in the Royale.</p>
-              <a class="card-link" href="https://goatmt.github.io/Flemingdon-Royale/" target="_blank" rel="noopener noreferrer">Enter the Royale <span aria-hidden="true">↗</span></a>
-            </div>
-            <span class="card-glow" aria-hidden="true"></span>
-          </article>
-
-          <article class="world-card rush-card">
-            <div class="card-topline"><span>PLAYABLE GAME</span><span class="card-number">02</span></div>
-            <div class="card-art rush-art"><img src="assets/lantern-rush-logo.png" alt="Lantern Rush"></div>
+          <article class="world-card rush-card" data-reveal>
+            <div class="card-topline"><span>PLAY NOW</span><span class="card-number">01</span></div>
+          <div class="card-art rush-art"><img src="assets/lantern-rush-logo.png" alt="Lantern Rush" loading="lazy"></div>
             <div class="card-content">
               <p class="card-overline">3D SOCCER · LSL PLAYERS</p>
               <h3>Lantern<br>Rush</h3>
               <p>Take the pitch in a 3D soccer game featuring LSL players.</p>
-              <a class="card-link" href="https://goatmt.github.io/Lantern-Rush/" target="_blank" rel="noopener noreferrer">Play Lantern Rush <span aria-hidden="true">↗</span></a>
+              <a class="button button-card" href="https://goatmt.github.io/Lantern-Rush/" target="_blank" rel="noopener noreferrer">Play Lantern Rush <span aria-hidden="true">↗</span></a>
             </div>
             <span class="card-glow" aria-hidden="true"></span>
           </article>
 
-          <article class="world-card league-card" id="league">
-            <div class="card-topline"><span>REAL GAMES · REAL STATS</span><span class="card-number">03</span></div>
-            <div class="card-art league-art"><img src="assets/lantern-soccer-league-logo.png" alt="Lantern Soccer League"></div>
+          <article class="world-card royale-card" data-reveal>
+            <div class="card-topline"><span>IN DEVELOPMENT</span><span class="card-number">02</span></div>
+            <div class="card-art royale-art"><img src="assets/flemingdon-royale-logo.png" alt="Flemo Royale" loading="lazy"></div>
             <div class="card-content">
-              <p class="card-overline">THE HOME OF LSL</p>
-              <h3>Lantern Soccer<br>League</h3>
-              <p>Keep up with real games, stats, teams, and more.</p>
-              <div class="card-links">
-                <a class="card-link" href="https://goatmt.github.io/LSL/" target="_blank" rel="noopener noreferrer">Visit the league <span aria-hidden="true">↗</span></a>
-                <a class="card-link card-link-secondary" href="https://www.instagram.com/lanternsoccerleague/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-              </div>
+              <p class="card-overline">FLEMINGDON · BATTLE ROYALE</p>
+              <h3>Flemo<br>Royale</h3>
+              <p>A new drop-in, rise-up world is on the way.</p>
+              <span class="coming-soon"><span class="coming-dot"></span> Flemo Royale is coming soon</span>
             </div>
             <span class="card-glow" aria-hidden="true"></span>
           </article>
@@ -108,8 +118,8 @@
         <div class="academy-backdrop" aria-hidden="true"></div>
         <div class="academy-inner section-wrap">
           <div class="academy-identity">
-            <p class="eyebrow section-kicker">02 / LEARN · GROW · CONNECT</p>
-            <div class="academy-logo-frame"><img src="assets/lantern-of-knowledge-logo.png" alt="Lantern of Knowledge Academy emblem"></div>
+            <p class="eyebrow section-kicker">03 / LEARN · GROW · CONNECT</p>
+            <div class="academy-logo-frame"><img src="assets/lantern-of-knowledge-logo.png" alt="Lantern of Knowledge Academy emblem" loading="lazy"></div>
             <p class="academy-location"><span class="pin-icon" aria-hidden="true">⌖</span> FLEMINGDON PARK, TORONTO</p>
             <a class="button button-outline" href="https://lanternofknowledgeacademy.ca/" target="_blank" rel="noopener noreferrer">Visit the academy <span aria-hidden="true">↗</span></a>
             <div class="academy-highlights" aria-label="Academy milestones">
@@ -119,7 +129,7 @@
             </div>
           </div>
 
-          <div class="academy-story">
+          <div class="academy-story" data-reveal>
             <p class="eyebrow story-kicker">A COMMUNITY-LED PLACE TO LEARN</p>
             <h2 id="academy-title">Lantern of<br><span>Knowledge</span><br>Academy</h2>
             <p class="story-lead">For us, by us. Built to bring young people closer to knowledge, faith, and community.</p>
@@ -141,7 +151,7 @@
 
       <section class="closing section-wrap" aria-label="Lantern community links">
         <div class="closing-mark" aria-hidden="true"><img src="assets/lantern-soccer-league-logo.png" alt=""></div>
-        <div class="closing-copy">
+        <div class="closing-copy" data-reveal>
           <p class="eyebrow section-kicker">THE COMMUNITY KEEPS GROWING</p>
           <h2>There’s always<br><span>more to discover.</span></h2>
         </div>
@@ -153,8 +163,8 @@
       <a class="footer-brand" href="#top">LANTERN <b>HUB</b></a>
       <p>A shared home for Lantern games, sport, and community.</p>
       <div class="footer-links">
-        <a href="#worlds">Explore</a>
-        <a href="#league">League</a>
+        <a href="#league">Main site</a>
+        <a href="#games">Games</a>
         <a href="https://www.instagram.com/lanternsoccerleague/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         <a href="https://lanternofknowledgeacademy.ca/" target="_blank" rel="noopener noreferrer">Academy ↗</a>
       </div>
